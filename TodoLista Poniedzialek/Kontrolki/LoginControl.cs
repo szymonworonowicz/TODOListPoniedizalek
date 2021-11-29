@@ -20,12 +20,12 @@ namespace TodoLista_Poniedzialek.Kontrolki
 
         private void btnZaloguj_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+
         }
 
         private void btnZalozKonto_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

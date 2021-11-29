@@ -47,7 +47,7 @@ namespace TodoLista_Poniedzialek.Kontrolki
             this.btnZalozKonto.FlatAppearance.BorderSize = 0;
             this.btnZalozKonto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnZalozKonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnZalozKonto.Location = new System.Drawing.Point(141, 477);
+            this.btnZalozKonto.Location = new System.Drawing.Point(141, 472);
             this.btnZalozKonto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnZalozKonto.Name = "btnZalozKonto";
             this.btnZalozKonto.Size = new System.Drawing.Size(228, 78);
@@ -65,6 +65,7 @@ namespace TodoLista_Poniedzialek.Kontrolki
             this.btnZaloguj.Location = new System.Drawing.Point(141, 355);
             this.btnZaloguj.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnZaloguj.Name = "btnZaloguj";
+            this.btnZaloguj.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnZaloguj.Size = new System.Drawing.Size(228, 79);
             this.btnZaloguj.TabIndex = 8;
             this.btnZaloguj.Text = "Zaloguj";
@@ -116,7 +117,7 @@ namespace TodoLista_Poniedzialek.Kontrolki
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(110, 31);
+            this.label3.Location = new System.Drawing.Point(102, 31);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(314, 63);
             this.label3.TabIndex = 9;
