@@ -33,13 +33,13 @@
             this.lblZalogowanyWartosc = new System.Windows.Forms.Label();
             this.lblKreski = new System.Windows.Forms.Label();
             this.lvZadania = new System.Windows.Forms.ListView();
-            this.colId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colIsReady = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.lblTodoTitle = new System.Windows.Forms.Label();
+            this.ColumnId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ColumnOpis = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ColumnZrobione = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // btnWyloguj
@@ -47,7 +47,7 @@
             this.btnWyloguj.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnWyloguj.FlatAppearance.BorderSize = 0;
             this.btnWyloguj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWyloguj.Font = new System.Drawing.Font("Monotype Corsiva", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWyloguj.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWyloguj.Location = new System.Drawing.Point(424, 11);
             this.btnWyloguj.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnWyloguj.Name = "btnWyloguj";
@@ -59,46 +59,45 @@
             // lblZalogowny
             // 
             this.lblZalogowny.AutoSize = true;
-            this.lblZalogowny.Font = new System.Drawing.Font("Monotype Corsiva", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZalogowny.Location = new System.Drawing.Point(133, 28);
+            this.lblZalogowny.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZalogowny.Location = new System.Drawing.Point(135, 27);
             this.lblZalogowny.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblZalogowny.Name = "lblZalogowny";
-            this.lblZalogowny.Size = new System.Drawing.Size(137, 24);
+            this.lblZalogowny.Size = new System.Drawing.Size(165, 25);
             this.lblZalogowny.TabIndex = 2;
             this.lblZalogowny.Text = "Zalogowany jako:";
             // 
             // lblZalogowanyWartosc
             // 
             this.lblZalogowanyWartosc.AutoSize = true;
-            this.lblZalogowanyWartosc.Font = new System.Drawing.Font("Monotype Corsiva", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZalogowanyWartosc.Location = new System.Drawing.Point(266, 27);
+            this.lblZalogowanyWartosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZalogowanyWartosc.Location = new System.Drawing.Point(308, 23);
             this.lblZalogowanyWartosc.Name = "lblZalogowanyWartosc";
-            this.lblZalogowanyWartosc.Size = new System.Drawing.Size(83, 27);
+            this.lblZalogowanyWartosc.Size = new System.Drawing.Size(100, 29);
             this.lblZalogowanyWartosc.TabIndex = 3;
             this.lblZalogowanyWartosc.Text = "Anonim";
             // 
             // lblKreski
             // 
             this.lblKreski.AutoSize = true;
-            this.lblKreski.Font = new System.Drawing.Font("Monotype Corsiva", 6F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKreski.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKreski.Location = new System.Drawing.Point(3, 68);
             this.lblKreski.Name = "lblKreski";
-            this.lblKreski.Size = new System.Drawing.Size(495, 11);
+            this.lblKreski.Size = new System.Drawing.Size(495, 9);
             this.lblKreski.TabIndex = 5;
             this.lblKreski.Text = "_________________________________________________________________________________" +
-       "_________________";
+    "_________________";
             // 
             // lvZadania
             // 
             this.lvZadania.BackColor = System.Drawing.SystemColors.Info;
             this.lvZadania.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.colId,
-            this.colTitle,
-            this.colIsReady});
+            this.ColumnId,
+            this.ColumnOpis,
+            this.ColumnZrobione});
             this.lvZadania.FullRowSelect = true;
             this.lvZadania.GridLines = true;
             this.lvZadania.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.lvZadania.HideSelection = false;
             this.lvZadania.Location = new System.Drawing.Point(5, 87);
             this.lvZadania.MultiSelect = false;
             this.lvZadania.Name = "lvZadania";
@@ -108,28 +107,13 @@
             this.lvZadania.UseCompatibleStateImageBehavior = false;
             this.lvZadania.View = System.Windows.Forms.View.Details;
             // 
-            // colId
-            // 
-            this.colId.Text = "Id";
-            this.colId.Width = 50;
-            // 
-            // colTitle
-            // 
-            this.colTitle.Text = "Title";
-            this.colTitle.Width = 274;
-            // 
-            // colIsReady
-            // 
-            this.colIsReady.Text = "Zrobione";
-            this.colIsReady.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colIsReady.Width = 85;
-            // 
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.LightGreen;
+            this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Maiandra GD", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(424, 87);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(68, 210);
@@ -166,17 +150,32 @@
             // lblTodoTitle
             // 
             this.lblTodoTitle.AutoSize = true;
-            this.lblTodoTitle.Font = new System.Drawing.Font("Monotype Corsiva", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTodoTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTodoTitle.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.lblTodoTitle.Location = new System.Drawing.Point(3, 11);
             this.lblTodoTitle.Name = "lblTodoTitle";
-            this.lblTodoTitle.Size = new System.Drawing.Size(122, 49);
+            this.lblTodoTitle.Size = new System.Drawing.Size(139, 46);
             this.lblTodoTitle.TabIndex = 11;
             this.lblTodoTitle.Text = "TODO";
             // 
+            // ColumnId
+            // 
+            this.ColumnId.Text = "Id";
+            this.ColumnId.Width = 43;
+            // 
+            // ColumnOpis
+            // 
+            this.ColumnOpis.Text = "Opis";
+            this.ColumnOpis.Width = 266;
+            // 
+            // ColumnZrobione
+            // 
+            this.ColumnZrobione.Text = "Zrobione";
+            this.ColumnZrobione.Width = 282;
+            // 
             // TasksControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.Controls.Add(this.lblTodoTitle);
@@ -188,7 +187,7 @@
             this.Controls.Add(this.lblZalogowanyWartosc);
             this.Controls.Add(this.lblZalogowny);
             this.Controls.Add(this.btnWyloguj);
-            this.Font = new System.Drawing.Font("Monotype Corsiva", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "TasksControl";
             this.Size = new System.Drawing.Size(500, 640);
@@ -205,10 +204,10 @@
         private System.Windows.Forms.ListView lvZadania;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.ColumnHeader colId;
-        private System.Windows.Forms.ColumnHeader colTitle;
-        private System.Windows.Forms.ColumnHeader colIsReady;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Label lblTodoTitle;
+        private System.Windows.Forms.ColumnHeader ColumnId;
+        private System.Windows.Forms.ColumnHeader ColumnOpis;
+        private System.Windows.Forms.ColumnHeader ColumnZrobione;
     }
 }
