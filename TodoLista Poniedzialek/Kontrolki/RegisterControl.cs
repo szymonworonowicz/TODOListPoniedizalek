@@ -12,9 +12,12 @@ namespace TodoLista_Poniedzialek.Kontrolki
 {
     public partial class RegisterControl : UserControl
     {
-        public RegisterControl()
+        private MainForm mainForm;
+        public RegisterControl(MainForm form)
         {
             InitializeComponent();
+            mainForm = form;
+            Dock = DockStyle.Fill;
         }
     }
 }

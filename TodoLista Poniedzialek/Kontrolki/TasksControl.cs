@@ -12,9 +12,13 @@ namespace TodoLista_Poniedzialek.Kontrolki
 {
     public partial class TasksControl : UserControl
     {
-        public TasksControl()
+        private MainForm mainForm;
+        public TasksControl(MainForm form)
         {
             InitializeComponent();
+            mainForm = form;
+            Dock = DockStyle.Fill;
+
         }
     }
 }

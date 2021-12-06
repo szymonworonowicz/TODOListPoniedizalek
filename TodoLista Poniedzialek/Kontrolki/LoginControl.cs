@@ -12,20 +12,26 @@ namespace TodoLista_Poniedzialek.Kontrolki
 {
     public partial class LoginControl : UserControl
     {
-        public LoginControl()
+        private MainForm mainForm;
+        public LoginControl(MainForm form)
         {
             InitializeComponent();
+
+            //przekazanie referencji na glowny formularz
+            mainForm = form;
+            //konttolka zajmuje cal apowierzchnie okna
+            Dock = DockStyle.Fill;
         }
 
 
         private void btnZaloguj_Click(object sender, EventArgs e)
         {
-
+            mainForm.PokazTasksControl();
         }
 
         private void btnZalozKonto_Click(object sender, EventArgs e)
         {
-            
+            mainForm.PokazRegisterControl();
         }
     }
 }
