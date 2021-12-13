@@ -52,6 +52,8 @@
     <Compile Include="Formularze\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Klasy\User.cs" />
+    <Compile Include="Klasy\UserManager.cs" />
     <Compile Include="Kontrolki\LoginControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -103,8 +105,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Klasy\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

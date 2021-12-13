@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TodoLista_Poniedzialek.Klasy
 {
-    public  class UserManager
+    public class UserManager
     {
         private List<User> users;
 
@@ -30,6 +30,29 @@ namespace TodoLista_Poniedzialek.Klasy
             }
 
             return null;
+        }
+
+        // metoda do sprawdzania czy podany login jest wolny
+        // w aplikacji nie możemy mieć dwóch użytkowników
+        // z tym samym loginem, więc zanim zapiszemy nowego użytkownika
+        // to musimy sprawdzić czy już taki nie istnieje
+
+        public bool CzyLoginWolny(string login)
+        {
+            foreach (User user in users)
+            {
+                if (user.Login == login)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        public void DodajUzytkownika(User user)
+        {
+            users.Add(user);
         }
     }
 }
