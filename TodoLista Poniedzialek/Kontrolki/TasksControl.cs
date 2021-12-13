@@ -20,5 +20,10 @@ namespace TodoLista_Poniedzialek.Kontrolki
             Dock = DockStyle.Fill;
 
         }
+
+        private void btnWyloguj_Click(object sender, EventArgs e)
+        {
+            mainForm.PokazLoginControl();
+        }
     }
 }

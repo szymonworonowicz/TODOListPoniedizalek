@@ -19,5 +19,15 @@ namespace TodoLista_Poniedzialek.Kontrolki
             mainForm = form;
             Dock = DockStyle.Fill;
         }
+
+        private void btnCofnij_Click(object sender, EventArgs e)
+        {
+            mainForm.PokazLoginControl();
+        }
+
+        private void btnZarejestruj_Click(object sender, EventArgs e)
+        {
+            mainForm.PokazRegisterControl();
+        }
     }
 }

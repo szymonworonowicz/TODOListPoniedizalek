@@ -33,13 +33,13 @@
             this.lblZalogowanyWartosc = new System.Windows.Forms.Label();
             this.lblKreski = new System.Windows.Forms.Label();
             this.lvZadania = new System.Windows.Forms.ListView();
+            this.ColumnId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ColumnOpis = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ColumnZrobione = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.lblTodoTitle = new System.Windows.Forms.Label();
-            this.ColumnId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ColumnOpis = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ColumnZrobione = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // btnWyloguj
@@ -55,6 +55,7 @@
             this.btnWyloguj.TabIndex = 1;
             this.btnWyloguj.Text = "🏃";
             this.btnWyloguj.UseVisualStyleBackColor = false;
+            this.btnWyloguj.Click += new System.EventHandler(this.btnWyloguj_Click);
             // 
             // lblZalogowny
             // 
@@ -98,6 +99,7 @@
             this.lvZadania.FullRowSelect = true;
             this.lvZadania.GridLines = true;
             this.lvZadania.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.lvZadania.HideSelection = false;
             this.lvZadania.Location = new System.Drawing.Point(5, 87);
             this.lvZadania.MultiSelect = false;
             this.lvZadania.Name = "lvZadania";
@@ -106,6 +108,21 @@
             this.lvZadania.TabIndex = 6;
             this.lvZadania.UseCompatibleStateImageBehavior = false;
             this.lvZadania.View = System.Windows.Forms.View.Details;
+            // 
+            // ColumnId
+            // 
+            this.ColumnId.Text = "Id";
+            this.ColumnId.Width = 43;
+            // 
+            // ColumnOpis
+            // 
+            this.ColumnOpis.Text = "Opis";
+            this.ColumnOpis.Width = 266;
+            // 
+            // ColumnZrobione
+            // 
+            this.ColumnZrobione.Text = "Zrobione";
+            this.ColumnZrobione.Width = 282;
             // 
             // btnAdd
             // 
@@ -157,21 +174,6 @@
             this.lblTodoTitle.Size = new System.Drawing.Size(139, 46);
             this.lblTodoTitle.TabIndex = 11;
             this.lblTodoTitle.Text = "TODO";
-            // 
-            // ColumnId
-            // 
-            this.ColumnId.Text = "Id";
-            this.ColumnId.Width = 43;
-            // 
-            // ColumnOpis
-            // 
-            this.ColumnOpis.Text = "Opis";
-            this.ColumnOpis.Width = 266;
-            // 
-            // ColumnZrobione
-            // 
-            this.ColumnZrobione.Text = "Zrobione";
-            this.ColumnZrobione.Width = 282;
             // 
             // TasksControl
             // 

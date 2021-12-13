@@ -59,6 +59,7 @@
             this.btnCofnij.TabIndex = 1;
             this.btnCofnij.Text = "🢨";
             this.btnCofnij.UseVisualStyleBackColor = false;
+            this.btnCofnij.Click += new System.EventHandler(this.btnCofnij_Click);
             // 
             // lblTitle
             // 
@@ -122,6 +123,7 @@
             this.btnZarejestruj.TabIndex = 5;
             this.btnZarejestruj.Text = "Zarejestruj";
             this.btnZarejestruj.UseVisualStyleBackColor = false;
+            this.btnZarejestruj.Click += new System.EventHandler(this.btnZarejestruj_Click);
             // 
             // tbLogin
             // 
