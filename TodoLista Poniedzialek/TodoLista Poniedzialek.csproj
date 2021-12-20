@@ -52,6 +52,8 @@
     <Compile Include="Formularze\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Klasy\TodoTask.cs" />
+    <Compile Include="Klasy\TodoTaskManager.cs" />
     <Compile Include="Klasy\User.cs" />
     <Compile Include="Klasy\UserManager.cs" />
     <Compile Include="Kontrolki\LoginControl.cs">
