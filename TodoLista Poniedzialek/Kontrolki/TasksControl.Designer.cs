@@ -150,6 +150,7 @@
             this.btnDelete.TabIndex = 9;
             this.btnDelete.Text = "🗑";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
