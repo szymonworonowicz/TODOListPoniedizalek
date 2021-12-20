@@ -1,0 +1,13 @@
+C:\Users\szymw\Source\Repos\szymonworonowicz\TODOListPoniedizalek\TodoLista Poniedzialek\bin\Debug\TodoLista Poniedzialek.exe
+C:\Users\szymw\Source\Repos\szymonworonowicz\TODOListPoniedizalek\TodoLista Poniedzialek\bin\Debug\TodoLista Poniedzialek.pdb
+C:\Users\szymw\Source\Repos\szymonworonowicz\TODOListPoniedizalek\TodoLista Poniedzialek\obj\Debug\TodoLista Poniedzialek.csproj.AssemblyReference.cache
+C:\Users\szymw\Source\Repos\szymonworonowicz\TODOListPoniedizalek\TodoLista Poniedzialek\obj\Debug\TodoLista Poniedzialek.csproj.SuggestedBindingRedirects.cache
+C:\Users\szymw\Source\Repos\szymonworonowicz\TODOListPoniedizalek\TodoLista Poniedzialek\obj\Debug\TodoLista_Poniedzialek.MainForm.resources
+C:\Users\szymw\Source\Repos\szymonworonowicz\TODOListPoniedizalek\TodoLista Poniedzialek\obj\Debug\TodoLista_Poniedzialek.Kontrolki.LoginControl.resources
+C:\Users\szymw\Source\Repos\szymonworonowicz\TODOListPoniedizalek\TodoLista Poniedzialek\obj\Debug\TodoLista_Poniedzialek.Kontrolki.RegisterControl.resources
+C:\Users\szymw\Source\Repos\szymonworonowicz\TODOListPoniedizalek\TodoLista Poniedzialek\obj\Debug\TodoLista_Poniedzialek.Kontrolki.TasksControl.resources
+C:\Users\szymw\Source\Repos\szymonworonowicz\TODOListPoniedizalek\TodoLista Poniedzialek\obj\Debug\TodoLista_Poniedzialek.Properties.Resources.resources
+C:\Users\szymw\Source\Repos\szymonworonowicz\TODOListPoniedizalek\TodoLista Poniedzialek\obj\Debug\TodoLista Poniedzialek.csproj.GenerateResource.cache
+C:\Users\szymw\Source\Repos\szymonworonowicz\TODOListPoniedizalek\TodoLista Poniedzialek\obj\Debug\TodoLista Poniedzialek.csproj.CoreCompileInputs.cache
+C:\Users\szymw\Source\Repos\szymonworonowicz\TODOListPoniedizalek\TodoLista Poniedzialek\obj\Debug\TodoLista Poniedzialek.exe
+C:\Users\szymw\Source\Repos\szymonworonowicz\TODOListPoniedizalek\TodoLista Poniedzialek\obj\Debug\TodoLista Poniedzialek.pdb

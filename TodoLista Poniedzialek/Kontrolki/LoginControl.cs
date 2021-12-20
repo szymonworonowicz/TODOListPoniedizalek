@@ -28,7 +28,7 @@ namespace TodoLista_Poniedzialek.Kontrolki
         private void btnZaloguj_Click(object sender, EventArgs e)
         {
             //sprawdzamy czy textboxy nie sa puste
-            if (string.IsNullOrEmpty(tbLogin.Text) || string.IsNullOrEmpty(lblHaslo.Text))
+            if (string.IsNullOrEmpty(tbLogin.Text) || string.IsNullOrEmpty(tbHaslo.Text))
             {
                 lblWalidacjaLogowania.Visible = true;
                 lblWalidacjaLogowania.Text = "Login lub hasło nie może być puste";

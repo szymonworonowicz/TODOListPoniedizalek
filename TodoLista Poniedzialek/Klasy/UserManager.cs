@@ -15,7 +15,7 @@ namespace TodoLista_Poniedzialek.Klasy
             //stworzenie listy
             users = new List<User>();
             //dodanie testowego uzytkownika
-            users.Add(new User(Guid.NewGuid(), "test", "test", "text"));
+            users.Add(new User(Guid.NewGuid(), "test", "test", "test"));
         }
 
         //wyszukiwanie uzytkownika po hasle i loginie 
