@@ -45,5 +45,41 @@ namespace TodoLista_Poniedzialek.Klasy
             TodoTask zadanie = ZnajdzZadanie(id);
             zadania.Remove(zadanie);
         }
+
+        // metoda zwracająca wszystkie zadania zalogowanego użytkownika z listy
+        public List<TodoTask> PobierzZadania(Guid userId)
+        {
+            // szukamy wszystkich zadań, których userId
+            // jest takie jak zalogowanego użytkownika
+            List<TodoTask> zadaniaZalogowanego = new List<TodoTask>();
+
+            foreach (TodoTask zadanie in zadania)
+            {
+                if (zadanie.UserId == userId)
+                {
+                    zadaniaZalogowanego.Add(zadanie);
+                } 
+            }
+
+            return zadaniaZalogowanego;
+        }
+
+        public int ObliczNastepneId()
+        {
+            //zmienna na maksymalne id
+            int max = 0;
+            // iterujemy po wszystkich zadaniach
+            foreach (TodoTask zadanie in zadania)
+            {
+                // jeżeli id kolejnego zadania większe
+                if (zadanie.Id > max)
+                {
+                    max = zadanie.Id;
+                } 
+            }
+            // numer następnego zadania będzie o jeden większy
+            // od maksymalnego numeru zadań, które są na liście
+            return max + 1;
+        }
     }
 }
